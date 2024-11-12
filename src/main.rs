@@ -1,4 +1,4 @@
-use chrono::{DateTime, Datelike, Duration, Local, NaiveDateTime, Utc};
+use chrono::{DateTime, Duration, Local, NaiveDateTime, Utc};
 use colored::*;
 use serde::{Deserialize, Serialize};
 use std::collections::HashMap;
@@ -42,6 +42,7 @@ impl HabitTracker {
         fs::create_dir_all(&data_dir).unwrap();
 
         let data_file = data_dir.join("activities.json");
+        // println!("Data file location: {:?}", data_file); // Uncomment this to see the path of your file (Quite a feature, huh?)
         let activities = if data_file.exists() {
             let content = fs::read_to_string(&data_file).unwrap();
             serde_json::from_str(&content).unwrap_or_default()
