@@ -7,6 +7,7 @@
 Ever wanted to know exactly how much time you're spending on your side projects vs scrolling through social media? Well, this CLI tool won't stop you from doom-scrolling, but at least you'll have pretty graphs to show for it! 📊
 
 ## 📸 Photos:
+![image](https://github.com/user-attachments/assets/1680ca54-c9ec-4aa1-a186-5ab54eb85a14)
 
 
 ## ✨ Features
